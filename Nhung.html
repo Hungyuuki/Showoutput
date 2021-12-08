@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thực hành hiển thị</title>
+</head>
+<body>
+    Nhấn vào nút Nút 1 để hiện ra chữ helloworld <br>
+    <button type="button" onclick="runfunc1()">
+        Nút 1
+    </button>
+    <script>
+        function runfunc1(){
+        alert('helloworld')
+        }
+    </script>
+    <p id="hung">I'm coming</p>
+    Nhấn vào nút Nút 2 để dòng chữ ở trên thay đổi thành helloworld
+    <br>
+    <button type="button" onclick="runfunc2()">
+        Nút 2
+    </button>
+    <script>
+        function runfunc2(){
+            document.getElementById("hung").innerHTML="helloworld"
+        }
+    </script>
+    <br>
+    <p id="mess"></p>
+    Nhấn vào nút Nút 3 để thay đổi từ nút bấm thành helloworld <br>
+    <button type="button" onclick="runfunc3()">
+        Nút 3
+    </button>
+    <script>
+        function runfunc3(){
+            document.write("helloworld")
+        }
+    </script>
+    <br>
+    Nhấn vào nút Nút 4 để thay đổi từ nút bấm thành helloworld <br>
+    <button type="button" onclick="runfunc4()">Nút 4</button>
+    <script>
+        function runfunc4(){
+            console.log("helloworld")
+        }
+    </script>
+</body>
+</html>
